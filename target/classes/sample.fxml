@@ -9,12 +9,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" style="-fx-background-color: #42c5f5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="youtube.Controller">
    <children>
-      <Button layoutX="163.0" layoutY="386.0" mnemonicParsing="false" onAction="#runIt" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: #42f5c8;" text="Run">
+      <Button fx:id="runButton" layoutX="163.0" layoutY="386.0" mnemonicParsing="false" onAction="#runIt" prefHeight="54.0" prefWidth="120.0" style="-fx-background-color: #42f5c8; -fx-border-color: #00d644; -fx-border-width: 2px; -fx-border-style: solid;" text="Run">
          <font>
             <Font name="Bell MT" size="18.0" />
          </font>
       </Button>
-      <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="471.0" prefHeight="44.0" prefWidth="314.0">
+      <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="464.0" prefHeight="44.0" prefWidth="314.0">
          <font>
             <Font name="Calisto MT" size="18.0" />
          </font>

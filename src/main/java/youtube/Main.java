@@ -13,7 +13,10 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/sample.fxml"));
         Parent root = loader.load();
         primaryStage.setTitle("Youtube Playlist Adder");
-        primaryStage.setScene(new Scene(root));
+        Scene scene = new Scene(root);
+        String css = this.getClass().getResource("/styling.css").toExternalForm();
+        scene.getStylesheets().add(css);
+        primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
     }

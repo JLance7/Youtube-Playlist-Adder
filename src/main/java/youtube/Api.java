@@ -93,13 +93,13 @@ public class Api {
 
     //get credentials when program starts
     public void startup() throws GeneralSecurityException, IOException, URISyntaxException {
-        vids.clear();         //clear videos to be added
         youtubeService = getService();
     }
 
 
     //call everything
     public void execute() throws GeneralSecurityException, IOException, GoogleJsonResponseException, Exception {
+        vids.clear();         //clear videos to be added
         // Define and execute the API request
         YouTube.PlaylistItems.List request = youtubeService.playlistItems()
                 .list("contentDetails");

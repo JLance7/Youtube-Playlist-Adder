@@ -1,0 +1,9 @@
+.notClicked{
+    -fx-background-color:  #42f5c8;
+    -fx-opacity: 1.0;
+}
+
+.clicked{
+    -fx-background-color:  #b8f5e7;
+    -fx-opacity: 0.5;
+}
